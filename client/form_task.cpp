@@ -91,22 +91,22 @@ void Form_task::set_task(int n)
     {
     //10 | рандом | ответ(Да/Нет)
     case 1:
-        ui->ester->hide();
-        ui->sunraise->show();
+        ui->egg->hide();
+        ui->sun->show();
         input = gen_task1();
         task = "Является ли граф планарным?\n" + input;
         break;
     //19 +картинка | ответ в виде: (?,?,?,...,?), где ? - цифра
     case 2:
-        ui->ester->hide();
-        ui->sunraise->hide();
+        ui->egg->hide();
+        ui->sun->hide();
         input = gen_task2();
         task = "Найти код Прюфера для дерева:\n" + input;
         break;
     //2 | ответ в виде числа(веса)
     case 3:
-        ui->ester->hide();
-        ui->->show();
+        ui->egg->hide();
+        ui->sun->show();
         input = gen_task3();
         task = "Найти кратчайший путь между вершинами s=v1, t=v4 в нагруженном связном ориентированном графе:\n"
                 + input
@@ -115,8 +115,8 @@ void Form_task::set_task(int n)
         break;
     //15 | ответ в виде числа
     case 4:
-        ui->ester->hide();
-        ui->sunraise->show();
+        ui->egg->hide();
+        ui->sun->show();
         input = gen_task4();
         task = "Найти хроматическое число графа:\n" + input;
         break;
@@ -130,9 +130,9 @@ void Form_task::on_secret_clicked()
     static int count = 1;
     if (count > 5)
     {
-        ui->ester->hide();
-        ui->task->show();
-        ui->sunraise->show();
+        ui->egg->hide();
+        ui->horror->show();
+        ui->sun->show();
         count = 1;
 
         return;
@@ -140,9 +140,9 @@ void Form_task::on_secret_clicked()
 
     if (count == 5)
     {
-        ui->sunraise->hide();
-        ui->task->hide();
-        ui->ester->show();
+        ui->sun->hide();
+        ui->horror->hide();
+        ui->egg->show();
     }
 
     count++;

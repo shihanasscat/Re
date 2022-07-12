@@ -17,6 +17,53 @@
    <iconset>
     <normaloff>../../../Users/User/Documents/Tempовая хуйня/easter egg.jpg</normaloff>../../../Users/User/Documents/Tempовая хуйня/easter egg.jpg</iconset>
   </property>
+  <widget class="QLabel" name="horror">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>50</y>
+     <width>261</width>
+     <height>201</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>qt.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="sun">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>10</y>
+     <width>381</width>
+     <height>291</height>
+    </rect>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>are_u_winning_sun.jpg</pixmap>
+   </property>
+  </widget>
   <widget class="QPushButton" name="pushButton_ok">
    <property name="geometry">
     <rect>
@@ -48,31 +95,12 @@
     </item>
    </layout>
   </widget>
-  <widget class="QPushButton" name="secret">
-   <property name="enabled">
-    <bool>true</bool>
-   </property>
+  <widget class="QLabel" name="egg">
    <property name="geometry">
     <rect>
-     <x>720</x>
-     <y>120</y>
-     <width>81</width>
-     <height>91</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-  </widget>
-  <widget class="QLabel" name="ester">
-   <property name="geometry">
-    <rect>
-     <x>650</x>
+     <x>600</x>
      <y>30</y>
-     <width>241</width>
+     <width>311</width>
      <height>241</height>
     </rect>
    </property>
@@ -86,49 +114,30 @@
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QLabel" name="sunraise">
+  <widget class="QPushButton" name="secret">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
    <property name="geometry">
     <rect>
-     <x>610</x>
-     <y>20</y>
-     <width>291</width>
-     <height>281</height>
+     <x>720</x>
+     <y>110</y>
+     <width>81</width>
+     <height>91</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
    </property>
    <property name="text">
     <string/>
    </property>
-   <property name="pixmap">
-    <pixmap>are_u_winning_sun.jpg</pixmap>
-   </property>
-   <property name="scaledContents">
-    <bool>true</bool>
-   </property>
   </widget>
-  <widget class="QLabel" name="task">
-   <property name="geometry">
-    <rect>
-     <x>640</x>
-     <y>30</y>
-     <width>241</width>
-     <height>241</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="pixmap">
-    <pixmap>qt.png</pixmap>
-   </property>
-   <property name="scaledContents">
-    <bool>true</bool>
-   </property>
-  </widget>
-  <zorder>task</zorder>
-  <zorder>ester</zorder>
+  <zorder>egg</zorder>
+  <zorder>horror</zorder>
+  <zorder>sun</zorder>
   <zorder>pushButton_ok</zorder>
   <zorder>layoutWidget</zorder>
-  <zorder>sunraise</zorder>
   <zorder>secret</zorder>
  </widget>
  <resources/>
