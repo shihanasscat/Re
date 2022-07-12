@@ -25,6 +25,7 @@ SOURCES += \
     mainwindow.cpp \
     not_allowed.cpp \
     serverfunctions.cpp \
+    unittest.cpp \
     wrong_form.cpp
 
 HEADERS += \
@@ -39,6 +40,7 @@ HEADERS += \
     mainwindow.h \
     not_allowed.h \
     serverfunctions.h \
+    unittest.h \
     wrong_form.h
 
 FORMS += \

@@ -24,15 +24,15 @@ QT_BEGIN_NAMESPACE
 class Ui_Form_task
 {
 public:
+    QLabel *horror;
+    QLabel *sun;
     QPushButton *pushButton_ok;
     QWidget *layoutWidget;
     QVBoxLayout *verticalLayout;
     QTextBrowser *textBrowser_task;
     QLineEdit *lineEdit;
+    QLabel *egg;
     QPushButton *secret;
-    QLabel *ester;
-    QLabel *sunraise;
-    QLabel *task;
 
     void setupUi(QWidget *Form_task)
     {
@@ -40,8 +40,21 @@ public:
             Form_task->setObjectName(QString::fromUtf8("Form_task"));
         Form_task->resize(986, 323);
         QIcon icon;
-        icon.addFile(QString::fromUtf8("../../../Users/User/Documents/Temp\320\276\320\262\320\260\321\217 \321\205\321\203\320\271\320\275\321\217/easter egg.jpg"), QSize(), QIcon::Normal, QIcon::Off);
+        icon.addFile(QString::fromUtf8("../../../../../Users/User/Documents/Temp\320\276\320\262\320\260\321\217 \321\205\321\203\320\271\320\275\321\217/easter egg.jpg"), QSize(), QIcon::Normal, QIcon::Off);
         Form_task->setWindowIcon(icon);
+        horror = new QLabel(Form_task);
+        horror->setObjectName(QString::fromUtf8("horror"));
+        horror->setEnabled(true);
+        horror->setGeometry(QRect(630, 50, 261, 201));
+        horror->setPixmap(QPixmap(QString::fromUtf8("../../../../../Users/User/Documents/Temp\320\276\320\262\320\260\321\217 \321\205\321\203\320\271\320\275\321\217/qt.png")));
+        horror->setScaledContents(true);
+        sun = new QLabel(Form_task);
+        sun->setObjectName(QString::fromUtf8("sun"));
+        sun->setEnabled(true);
+        sun->setGeometry(QRect(600, 10, 381, 291));
+        sun->setAutoFillBackground(false);
+        sun->setStyleSheet(QString::fromUtf8(""));
+        sun->setPixmap(QPixmap(QString::fromUtf8("../../../../../Users/User/Documents/Temp\320\276\320\262\320\260\321\217 \321\205\321\203\320\271\320\275\321\217/are u winning sun.jpg")));
         pushButton_ok = new QPushButton(Form_task);
         pushButton_ok->setObjectName(QString::fromUtf8("pushButton_ok"));
         pushButton_ok->setGeometry(QRect(240, 260, 75, 24));
@@ -61,31 +74,21 @@ public:
 
         verticalLayout->addWidget(lineEdit);
 
+        egg = new QLabel(Form_task);
+        egg->setObjectName(QString::fromUtf8("egg"));
+        egg->setGeometry(QRect(600, 30, 311, 241));
+        egg->setPixmap(QPixmap(QString::fromUtf8("../../../../../Users/User/Documents/Temp\320\276\320\262\320\260\321\217 \321\205\321\203\320\271\320\275\321\217/easter egg.jpg")));
+        egg->setScaledContents(true);
         secret = new QPushButton(Form_task);
         secret->setObjectName(QString::fromUtf8("secret"));
         secret->setEnabled(true);
-        secret->setGeometry(QRect(720, 120, 81, 91));
+        secret->setGeometry(QRect(720, 110, 81, 91));
         secret->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);"));
-        ester = new QLabel(Form_task);
-        ester->setObjectName(QString::fromUtf8("ester"));
-        ester->setGeometry(QRect(650, 30, 241, 241));
-        ester->setPixmap(QPixmap(QString::fromUtf8("easter_egg.jpg")));
-        ester->setScaledContents(true);
-        sunraise = new QLabel(Form_task);
-        sunraise->setObjectName(QString::fromUtf8("sunraise"));
-        sunraise->setGeometry(QRect(610, 20, 291, 281));
-        sunraise->setPixmap(QPixmap(QString::fromUtf8("are_u_winning_sun.jpg")));
-        sunraise->setScaledContents(true);
-        task = new QLabel(Form_task);
-        task->setObjectName(QString::fromUtf8("task"));
-        task->setGeometry(QRect(640, 30, 241, 241));
-        task->setPixmap(QPixmap(QString::fromUtf8("qt.png")));
-        task->setScaledContents(true);
-        task->raise();
-        ester->raise();
+        egg->raise();
+        horror->raise();
+        sun->raise();
         pushButton_ok->raise();
         layoutWidget->raise();
-        sunraise->raise();
         secret->raise();
 
         retranslateUi(Form_task);
@@ -96,11 +99,11 @@ public:
     void retranslateUi(QWidget *Form_task)
     {
         Form_task->setWindowTitle(QCoreApplication::translate("Form_task", "\320\227\320\260\320\264\320\260\320\275\320\270\320\265", nullptr));
+        horror->setText(QString());
+        sun->setText(QString());
         pushButton_ok->setText(QCoreApplication::translate("Form_task", "OK", nullptr));
+        egg->setText(QString());
         secret->setText(QString());
-        ester->setText(QString());
-        sunraise->setText(QString());
-        task->setText(QString());
     } // retranslateUi
 
 };

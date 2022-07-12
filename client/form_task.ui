@@ -15,7 +15,7 @@
   </property>
   <property name="windowIcon">
    <iconset>
-    <normaloff>../../../Users/User/Documents/Tempовая хуйня/easter egg.jpg</normaloff>../../../Users/User/Documents/Tempовая хуйня/easter egg.jpg</iconset>
+    <normaloff>../../../../../Users/User/Documents/Tempовая хуйня/easter egg.jpg</normaloff>../../../../../Users/User/Documents/Tempовая хуйня/easter egg.jpg</iconset>
   </property>
   <widget class="QLabel" name="horror">
    <property name="enabled">
@@ -33,7 +33,7 @@
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap>qt.png</pixmap>
+    <pixmap>../../../../../Users/User/Documents/Tempовая хуйня/qt.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -61,7 +61,7 @@
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap>are_u_winning_sun.jpg</pixmap>
+    <pixmap>../../../../../Users/User/Documents/Tempовая хуйня/are u winning sun.jpg</pixmap>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton_ok">
@@ -108,7 +108,7 @@
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap>easter_egg.jpg</pixmap>
+    <pixmap>../../../../../Users/User/Documents/Tempовая хуйня/easter egg.jpg</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
