@@ -1,0 +1,397 @@
+\hypertarget{serverfunctions_8cpp}{}\doxysection{serverfunctions.\+cpp File Reference}
+\label{serverfunctions_8cpp}\index{serverfunctions.cpp@{serverfunctions.cpp}}
+{\ttfamily \#include \char`\"{}serverfunctions.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$QDebug$>$}\newline
+{\ttfamily \#include $<$bitset$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{serverfunctions_8cpp_af7a648588c4385a6b4b3873f0ab7edaa}{auth}} (QString log, QString pass)
+\begin{DoxyCompactList}\small\item\em авторизация по введенными пользователем паролю и логину \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{serverfunctions_8cpp_a2638e44dce89dbae2e93b10c8c461a9e}{reg}} (QString log, QString pass, QString email, QString \mbox{\hyperlink{mainwindow_8cpp_ac239e35c6fdaead7d9011c035268dadd}{status}}, QString name, QString surname)
+\begin{DoxyCompactList}\small\item\em регистрация по введеным пользователем паролю, логину и почте \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{serverfunctions_8cpp_a8796d6c4e2115abe23db8bb06bd26002}{upd\+\_\+stat}} (int n, QString upd)
+\begin{DoxyCompactList}\small\item\em обновление статуса в кабинете пользователя \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{serverfunctions_8cpp_a9b901cfc3fb7fe84c1d43df13161ac94}{get\+\_\+stat}} (int n)
+\begin{DoxyCompactList}\small\item\em get\+\_\+stat вывод статуса в кабинете пользователя \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{serverfunctions_8cpp_add09667c48d74aeed056d483417e3d72}{get\+\_\+log}} (QString name, QString surname)
+\begin{DoxyCompactList}\small\item\em get\+\_\+log вывод данных пользователя \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{serverfunctions_8cpp_a24b6cc17f261488e78a014a9467505d2}{new\+\_\+group}} (QString group\+\_\+num, QString n1, QString s1, QString n2, QString s2, QString n3, QString s3, QString n4, QString s4, QString n5, QString s5, QString n6, QString s6, QString n7, QString s7, QString n8, QString s8, QString n9, QString s9)
+\begin{DoxyCompactList}\small\item\em new\+\_\+group добавление группы \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{serverfunctions_8cpp_af231a489288ecb5dd597e4d405f69b80}{check\+\_\+access}} (QString group\+\_\+num)
+\begin{DoxyCompactList}\small\item\em check\+\_\+access проверка доступа преподавателя к группе \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{serverfunctions_8cpp_a4b06c93c82c79e662ee7915932288a07}{get\+\_\+info}} (QString group)
+\begin{DoxyCompactList}\small\item\em get\+\_\+info получение информации по группе \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{serverfunctions_8cpp_a90b6e69619df5f010e8ac004d18c4dd6}{get\+\_\+student}} ()
+\begin{DoxyCompactList}\small\item\em get\+\_\+student получение инфрмации о студенте \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{serverfunctions_8cpp_adf749ecacdd6136c2abd5b7e812344ab}{get\+\_\+teacher}} ()
+\begin{DoxyCompactList}\small\item\em get\+\_\+teacher получение информации о преподавателе \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{serverfunctions_8cpp_a7041b7eb95a86738bc3de8c086b9cb15}{get\+\_\+group}} ()
+\begin{DoxyCompactList}\small\item\em get\+\_\+group получение номера группы \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{serverfunctions_8cpp_a9a794aea876d5c3d21fa6c6c1ac21e31}{solve\+\_\+task1}} (QString input)
+\begin{DoxyCompactList}\small\item\em автоматическое решение задания 1 \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{serverfunctions_8cpp_a625a5b85ad322f680757a81f8caf0391}{solve\+\_\+task2}} ()
+\begin{DoxyCompactList}\small\item\em автоматическое решение задания 2 \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{serverfunctions_8cpp_a51e65322cf4dd33ff252dfb29e74aa62}{solve\+\_\+task3}} ()
+\begin{DoxyCompactList}\small\item\em автоматическое решение задания 3 \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{serverfunctions_8cpp_a0c5d73c63011e2dcb5984d67e6d07109}{solve\+\_\+task4}} ()
+\item 
+QString \mbox{\hyperlink{serverfunctions_8cpp_aac041e8b9a708a4c872979f504b000c5}{gen\+\_\+task1}} ()
+\begin{DoxyCompactList}\small\item\em автоматическая генерация вектора булевых значений \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{serverfunctions_8cpp_a249db988bcbc53bb5c8d06133ba3dc3b}{gen\+\_\+task2}} ()
+\begin{DoxyCompactList}\small\item\em автоматическая генерация вектора булевых значений \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{serverfunctions_8cpp_ac604399424d8884cdd30a44675cfdf5a}{gen\+\_\+task3}} ()
+\begin{DoxyCompactList}\small\item\em автоматическая генерация вектора булевых значений \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{serverfunctions_8cpp_a400b48dff01a38f9312ad941b70b476e}{gen\+\_\+task4}} ()
+\begin{DoxyCompactList}\small\item\em автоматическая генерация вектора булевых значений \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{serverfunctions_8cpp_abc4c720a80b51dd6d59eba8643939b1c}{check\+\_\+task}} (int task\+\_\+num, QString ans, QString input)
+\begin{DoxyCompactList}\small\item\em проверка заданий \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{serverfunctions_8cpp_af7a648588c4385a6b4b3873f0ab7edaa}\label{serverfunctions_8cpp_af7a648588c4385a6b4b3873f0ab7edaa}} 
+\index{serverfunctions.cpp@{serverfunctions.cpp}!auth@{auth}}
+\index{auth@{auth}!serverfunctions.cpp@{serverfunctions.cpp}}
+\doxysubsubsection{\texorpdfstring{auth()}{auth()}}
+{\footnotesize\ttfamily void auth (\begin{DoxyParamCaption}\item[{QString}]{log,  }\item[{QString}]{pass }\end{DoxyParamCaption})}
+
+
+
+авторизация по введенными пользователем паролю и логину 
+
+Функция авторизации по логину и паролю от пользователя
+
+
+\begin{DoxyParams}{Parameters}
+{\em log} & \\
+\hline
+{\em pass} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{serverfunctions_8cpp_af231a489288ecb5dd597e4d405f69b80}\label{serverfunctions_8cpp_af231a489288ecb5dd597e4d405f69b80}} 
+\index{serverfunctions.cpp@{serverfunctions.cpp}!check\_access@{check\_access}}
+\index{check\_access@{check\_access}!serverfunctions.cpp@{serverfunctions.cpp}}
+\doxysubsubsection{\texorpdfstring{check\_access()}{check\_access()}}
+{\footnotesize\ttfamily void check\+\_\+access (\begin{DoxyParamCaption}\item[{QString}]{group\+\_\+num }\end{DoxyParamCaption})}
+
+
+
+check\+\_\+access проверка доступа преподавателя к группе 
+
+
+\begin{DoxyParams}{Parameters}
+{\em group\+\_\+num} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{serverfunctions_8cpp_abc4c720a80b51dd6d59eba8643939b1c}\label{serverfunctions_8cpp_abc4c720a80b51dd6d59eba8643939b1c}} 
+\index{serverfunctions.cpp@{serverfunctions.cpp}!check\_task@{check\_task}}
+\index{check\_task@{check\_task}!serverfunctions.cpp@{serverfunctions.cpp}}
+\doxysubsubsection{\texorpdfstring{check\_task()}{check\_task()}}
+{\footnotesize\ttfamily bool check\+\_\+task (\begin{DoxyParamCaption}\item[{int}]{task\+\_\+num,  }\item[{QString}]{ans,  }\item[{QString}]{input }\end{DoxyParamCaption})}
+
+
+
+проверка заданий 
+
+Функция проверки правильности решения задания
+
+
+\begin{DoxyParams}{Parameters}
+{\em task\+\_\+num} & \\
+\hline
+{\em ans} & \\
+\hline
+{\em input} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{serverfunctions_8cpp_aac041e8b9a708a4c872979f504b000c5}\label{serverfunctions_8cpp_aac041e8b9a708a4c872979f504b000c5}} 
+\index{serverfunctions.cpp@{serverfunctions.cpp}!gen\_task1@{gen\_task1}}
+\index{gen\_task1@{gen\_task1}!serverfunctions.cpp@{serverfunctions.cpp}}
+\doxysubsubsection{\texorpdfstring{gen\_task1()}{gen\_task1()}}
+{\footnotesize\ttfamily QString gen\+\_\+task1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+автоматическая генерация вектора булевых значений 
+
+Функция рандомной генерации вектора булевых значений
+
+\begin{DoxyReturn}{Returns}
+вектор булевых значений 
+\end{DoxyReturn}
+\mbox{\Hypertarget{serverfunctions_8cpp_a249db988bcbc53bb5c8d06133ba3dc3b}\label{serverfunctions_8cpp_a249db988bcbc53bb5c8d06133ba3dc3b}} 
+\index{serverfunctions.cpp@{serverfunctions.cpp}!gen\_task2@{gen\_task2}}
+\index{gen\_task2@{gen\_task2}!serverfunctions.cpp@{serverfunctions.cpp}}
+\doxysubsubsection{\texorpdfstring{gen\_task2()}{gen\_task2()}}
+{\footnotesize\ttfamily QString gen\+\_\+task2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+автоматическая генерация вектора булевых значений 
+
+Функция рандомной генерации вектора булевых значений
+
+\begin{DoxyReturn}{Returns}
+вектор булевых значений 
+\end{DoxyReturn}
+\mbox{\Hypertarget{serverfunctions_8cpp_ac604399424d8884cdd30a44675cfdf5a}\label{serverfunctions_8cpp_ac604399424d8884cdd30a44675cfdf5a}} 
+\index{serverfunctions.cpp@{serverfunctions.cpp}!gen\_task3@{gen\_task3}}
+\index{gen\_task3@{gen\_task3}!serverfunctions.cpp@{serverfunctions.cpp}}
+\doxysubsubsection{\texorpdfstring{gen\_task3()}{gen\_task3()}}
+{\footnotesize\ttfamily QString gen\+\_\+task3 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+автоматическая генерация вектора булевых значений 
+
+Функция рандомной генерации вектора булевых значений
+
+\begin{DoxyReturn}{Returns}
+вектор булевых значений 
+\end{DoxyReturn}
+\mbox{\Hypertarget{serverfunctions_8cpp_a400b48dff01a38f9312ad941b70b476e}\label{serverfunctions_8cpp_a400b48dff01a38f9312ad941b70b476e}} 
+\index{serverfunctions.cpp@{serverfunctions.cpp}!gen\_task4@{gen\_task4}}
+\index{gen\_task4@{gen\_task4}!serverfunctions.cpp@{serverfunctions.cpp}}
+\doxysubsubsection{\texorpdfstring{gen\_task4()}{gen\_task4()}}
+{\footnotesize\ttfamily QString gen\+\_\+task4 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+автоматическая генерация вектора булевых значений 
+
+Функция рандомной генерации вектора булевых значений
+
+\begin{DoxyReturn}{Returns}
+вектор булевых значений 
+\end{DoxyReturn}
+\mbox{\Hypertarget{serverfunctions_8cpp_a7041b7eb95a86738bc3de8c086b9cb15}\label{serverfunctions_8cpp_a7041b7eb95a86738bc3de8c086b9cb15}} 
+\index{serverfunctions.cpp@{serverfunctions.cpp}!get\_group@{get\_group}}
+\index{get\_group@{get\_group}!serverfunctions.cpp@{serverfunctions.cpp}}
+\doxysubsubsection{\texorpdfstring{get\_group()}{get\_group()}}
+{\footnotesize\ttfamily void get\+\_\+group (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get\+\_\+group получение номера группы 
+
+get\+\_\+teacher получение номера группы \mbox{\Hypertarget{serverfunctions_8cpp_a4b06c93c82c79e662ee7915932288a07}\label{serverfunctions_8cpp_a4b06c93c82c79e662ee7915932288a07}} 
+\index{serverfunctions.cpp@{serverfunctions.cpp}!get\_info@{get\_info}}
+\index{get\_info@{get\_info}!serverfunctions.cpp@{serverfunctions.cpp}}
+\doxysubsubsection{\texorpdfstring{get\_info()}{get\_info()}}
+{\footnotesize\ttfamily void get\+\_\+info (\begin{DoxyParamCaption}\item[{QString}]{group }\end{DoxyParamCaption})}
+
+
+
+get\+\_\+info получение информации по группе 
+
+
+\begin{DoxyParams}{Parameters}
+{\em group} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{serverfunctions_8cpp_add09667c48d74aeed056d483417e3d72}\label{serverfunctions_8cpp_add09667c48d74aeed056d483417e3d72}} 
+\index{serverfunctions.cpp@{serverfunctions.cpp}!get\_log@{get\_log}}
+\index{get\_log@{get\_log}!serverfunctions.cpp@{serverfunctions.cpp}}
+\doxysubsubsection{\texorpdfstring{get\_log()}{get\_log()}}
+{\footnotesize\ttfamily void get\+\_\+log (\begin{DoxyParamCaption}\item[{QString}]{name,  }\item[{QString}]{surname }\end{DoxyParamCaption})}
+
+
+
+get\+\_\+log вывод данных пользователя 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & \\
+\hline
+{\em surname} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{serverfunctions_8cpp_a9b901cfc3fb7fe84c1d43df13161ac94}\label{serverfunctions_8cpp_a9b901cfc3fb7fe84c1d43df13161ac94}} 
+\index{serverfunctions.cpp@{serverfunctions.cpp}!get\_stat@{get\_stat}}
+\index{get\_stat@{get\_stat}!serverfunctions.cpp@{serverfunctions.cpp}}
+\doxysubsubsection{\texorpdfstring{get\_stat()}{get\_stat()}}
+{\footnotesize\ttfamily void get\+\_\+stat (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+get\+\_\+stat вывод статуса в кабинете пользователя 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & -\/ количество набранных баллов \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{serverfunctions_8cpp_a90b6e69619df5f010e8ac004d18c4dd6}\label{serverfunctions_8cpp_a90b6e69619df5f010e8ac004d18c4dd6}} 
+\index{serverfunctions.cpp@{serverfunctions.cpp}!get\_student@{get\_student}}
+\index{get\_student@{get\_student}!serverfunctions.cpp@{serverfunctions.cpp}}
+\doxysubsubsection{\texorpdfstring{get\_student()}{get\_student()}}
+{\footnotesize\ttfamily void get\+\_\+student (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get\+\_\+student получение инфрмации о студенте 
+
+\mbox{\Hypertarget{serverfunctions_8cpp_adf749ecacdd6136c2abd5b7e812344ab}\label{serverfunctions_8cpp_adf749ecacdd6136c2abd5b7e812344ab}} 
+\index{serverfunctions.cpp@{serverfunctions.cpp}!get\_teacher@{get\_teacher}}
+\index{get\_teacher@{get\_teacher}!serverfunctions.cpp@{serverfunctions.cpp}}
+\doxysubsubsection{\texorpdfstring{get\_teacher()}{get\_teacher()}}
+{\footnotesize\ttfamily void get\+\_\+teacher (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get\+\_\+teacher получение информации о преподавателе 
+
+\mbox{\Hypertarget{serverfunctions_8cpp_a24b6cc17f261488e78a014a9467505d2}\label{serverfunctions_8cpp_a24b6cc17f261488e78a014a9467505d2}} 
+\index{serverfunctions.cpp@{serverfunctions.cpp}!new\_group@{new\_group}}
+\index{new\_group@{new\_group}!serverfunctions.cpp@{serverfunctions.cpp}}
+\doxysubsubsection{\texorpdfstring{new\_group()}{new\_group()}}
+{\footnotesize\ttfamily void new\+\_\+group (\begin{DoxyParamCaption}\item[{QString}]{group\+\_\+num,  }\item[{QString}]{n1,  }\item[{QString}]{s1,  }\item[{QString}]{n2,  }\item[{QString}]{s2,  }\item[{QString}]{n3,  }\item[{QString}]{s3,  }\item[{QString}]{n4,  }\item[{QString}]{s4,  }\item[{QString}]{n5,  }\item[{QString}]{s5,  }\item[{QString}]{n6,  }\item[{QString}]{s6,  }\item[{QString}]{n7,  }\item[{QString}]{s7,  }\item[{QString}]{n8,  }\item[{QString}]{s8,  }\item[{QString}]{n9,  }\item[{QString}]{s9 }\end{DoxyParamCaption})}
+
+
+
+new\+\_\+group добавление группы 
+
+
+\begin{DoxyParams}{Parameters}
+{\em group\+\_\+num} & \\
+\hline
+{\em n1} & -\/ Имя \\
+\hline
+{\em s1} & -\/ Фамилия \\
+\hline
+{\em n2} & \\
+\hline
+{\em s2} & \\
+\hline
+{\em n3} & \\
+\hline
+{\em s3} & \\
+\hline
+{\em n4} & \\
+\hline
+{\em s4} & \\
+\hline
+{\em n5} & \\
+\hline
+{\em s5} & \\
+\hline
+{\em n6} & \\
+\hline
+{\em s6} & \\
+\hline
+{\em n7} & \\
+\hline
+{\em s7} & \\
+\hline
+{\em n8} & \\
+\hline
+{\em s8} & \\
+\hline
+{\em n9} & \\
+\hline
+{\em s9} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{serverfunctions_8cpp_a2638e44dce89dbae2e93b10c8c461a9e}\label{serverfunctions_8cpp_a2638e44dce89dbae2e93b10c8c461a9e}} 
+\index{serverfunctions.cpp@{serverfunctions.cpp}!reg@{reg}}
+\index{reg@{reg}!serverfunctions.cpp@{serverfunctions.cpp}}
+\doxysubsubsection{\texorpdfstring{reg()}{reg()}}
+{\footnotesize\ttfamily void reg (\begin{DoxyParamCaption}\item[{QString}]{log,  }\item[{QString}]{pass,  }\item[{QString}]{email,  }\item[{QString}]{status,  }\item[{QString}]{name,  }\item[{QString}]{surname }\end{DoxyParamCaption})}
+
+
+
+регистрация по введеным пользователем паролю, логину и почте 
+
+Функция регистрации по логину, паролю и почте от пользователя
+
+
+\begin{DoxyParams}{Parameters}
+{\em log} & \\
+\hline
+{\em pass} & \\
+\hline
+{\em email} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{serverfunctions_8cpp_a9a794aea876d5c3d21fa6c6c1ac21e31}\label{serverfunctions_8cpp_a9a794aea876d5c3d21fa6c6c1ac21e31}} 
+\index{serverfunctions.cpp@{serverfunctions.cpp}!solve\_task1@{solve\_task1}}
+\index{solve\_task1@{solve\_task1}!serverfunctions.cpp@{serverfunctions.cpp}}
+\doxysubsubsection{\texorpdfstring{solve\_task1()}{solve\_task1()}}
+{\footnotesize\ttfamily QString solve\+\_\+task1 (\begin{DoxyParamCaption}\item[{QString}]{input }\end{DoxyParamCaption})}
+
+
+
+автоматическое решение задания 1 
+
+Функция автоматического решения задачи 1.
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+правильный ответ на задание 1 
+\end{DoxyReturn}
+\mbox{\Hypertarget{serverfunctions_8cpp_a625a5b85ad322f680757a81f8caf0391}\label{serverfunctions_8cpp_a625a5b85ad322f680757a81f8caf0391}} 
+\index{serverfunctions.cpp@{serverfunctions.cpp}!solve\_task2@{solve\_task2}}
+\index{solve\_task2@{solve\_task2}!serverfunctions.cpp@{serverfunctions.cpp}}
+\doxysubsubsection{\texorpdfstring{solve\_task2()}{solve\_task2()}}
+{\footnotesize\ttfamily QString solve\+\_\+task2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+автоматическое решение задания 2 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+правильный ответ на задание 2 
+\end{DoxyReturn}
+\mbox{\Hypertarget{serverfunctions_8cpp_a51e65322cf4dd33ff252dfb29e74aa62}\label{serverfunctions_8cpp_a51e65322cf4dd33ff252dfb29e74aa62}} 
+\index{serverfunctions.cpp@{serverfunctions.cpp}!solve\_task3@{solve\_task3}}
+\index{solve\_task3@{solve\_task3}!serverfunctions.cpp@{serverfunctions.cpp}}
+\doxysubsubsection{\texorpdfstring{solve\_task3()}{solve\_task3()}}
+{\footnotesize\ttfamily QString solve\+\_\+task3 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+автоматическое решение задания 3 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+правильный ответ на задание 3 
+\end{DoxyReturn}
+\mbox{\Hypertarget{serverfunctions_8cpp_a0c5d73c63011e2dcb5984d67e6d07109}\label{serverfunctions_8cpp_a0c5d73c63011e2dcb5984d67e6d07109}} 
+\index{serverfunctions.cpp@{serverfunctions.cpp}!solve\_task4@{solve\_task4}}
+\index{solve\_task4@{solve\_task4}!serverfunctions.cpp@{serverfunctions.cpp}}
+\doxysubsubsection{\texorpdfstring{solve\_task4()}{solve\_task4()}}
+{\footnotesize\ttfamily QString solve\+\_\+task4 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{serverfunctions_8cpp_a8796d6c4e2115abe23db8bb06bd26002}\label{serverfunctions_8cpp_a8796d6c4e2115abe23db8bb06bd26002}} 
+\index{serverfunctions.cpp@{serverfunctions.cpp}!upd\_stat@{upd\_stat}}
+\index{upd\_stat@{upd\_stat}!serverfunctions.cpp@{serverfunctions.cpp}}
+\doxysubsubsection{\texorpdfstring{upd\_stat()}{upd\_stat()}}
+{\footnotesize\ttfamily void upd\+\_\+stat (\begin{DoxyParamCaption}\item[{int}]{n,  }\item[{QString}]{upd }\end{DoxyParamCaption})}
+
+
+
+обновление статуса в кабинете пользователя 
+
+Функция обновления статистики после решения заданий
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & -\/ количество набранных баллов \\
+\hline
+{\em upd} & \\
+\hline
+\end{DoxyParams}

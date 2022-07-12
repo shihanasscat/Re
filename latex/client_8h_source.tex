@@ -1,0 +1,91 @@
+\hypertarget{client_8h_source}{}\doxysection{client.\+h}
+\mbox{\hyperlink{client_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef CLIENT\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define CLIENT\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <QtNetwork>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <QByteArray>}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <QDebug>}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <QCoreApplication>}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include <QString>}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include <QObject>}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include <QTcpSocket>}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include <QStringList>}}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{keyword}{class }\mbox{\hyperlink{class_client}{Client}};}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 \textcolor{keyword}{class }\mbox{\hyperlink{class_client_destroyer}{ClientDestroyer}}}
+\DoxyCodeLine{18 \{}
+\DoxyCodeLine{19     \textcolor{keyword}{private}:}
+\DoxyCodeLine{20         \mbox{\hyperlink{class_client}{Client}}* instance;}
+\DoxyCodeLine{21     \textcolor{keyword}{public}:}
+\DoxyCodeLine{25         \mbox{\hyperlink{class_client_destroyer_a940700d4d6434ac3e5688b0440301fad}{\string~ClientDestroyer}}();}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{32         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_client_destroyer_a9a0f1e9fe1d41d25d31eeed47b2b22ca}{Initialize}}(\mbox{\hyperlink{class_client}{Client}}* instance);}
+\DoxyCodeLine{33 \};}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36 \textcolor{keyword}{class }\mbox{\hyperlink{class_client}{Client}}: \textcolor{keyword}{public} QObject}
+\DoxyCodeLine{37 \{}
+\DoxyCodeLine{38     Q\_OBJECT}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{40     \textcolor{keyword}{private}:}
+\DoxyCodeLine{41         \textcolor{keyword}{static} \mbox{\hyperlink{class_client}{Client}}* instance;}
+\DoxyCodeLine{42         \textcolor{keyword}{static} \mbox{\hyperlink{class_client_destroyer}{ClientDestroyer}} destroyer;}
+\DoxyCodeLine{43         \textcolor{keyword}{static} QTcpSocket* tcpSocket;}
+\DoxyCodeLine{44 }
+\DoxyCodeLine{45     \textcolor{keyword}{protected}:}
+\DoxyCodeLine{50          \mbox{\hyperlink{class_client_a5b62b1caeb5c2c35a2ae367851d3ad92}{Client}}(QObject *parent = \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{51 }
+\DoxyCodeLine{55         \mbox{\hyperlink{class_client_a840e519ca781888cbd54181572ebe3a7}{\string~Client}}();}
+\DoxyCodeLine{56 }
+\DoxyCodeLine{57         \mbox{\hyperlink{class_client_a9500b28b17943a6e99ba2e4e98fb1732}{Client}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_client}{Client}}\& );}
+\DoxyCodeLine{58         \mbox{\hyperlink{class_client}{Client}}\& \mbox{\hyperlink{class_client_a6f217c940e237669b7cc7e09f2441017}{operator = }}(\mbox{\hyperlink{class_client}{Client}} \&);}
+\DoxyCodeLine{59         \textcolor{keyword}{friend} \textcolor{keyword}{class }\mbox{\hyperlink{class_client_destroyer}{ClientDestroyer}};}
+\DoxyCodeLine{60 }
+\DoxyCodeLine{66         QString \mbox{\hyperlink{class_client_a0dcd38c56ed32e5a9b2be77813dc5b86}{Encrypt}}(QString text);}
+\DoxyCodeLine{67 }
+\DoxyCodeLine{73         QString \mbox{\hyperlink{class_client_a31922bfad3aebe5b67546f0e61a3c8e0}{Decrypt}}(QString encryptedText);}
+\DoxyCodeLine{74 }
+\DoxyCodeLine{75     \textcolor{keyword}{public}:}
+\DoxyCodeLine{80         \textcolor{keyword}{static} \mbox{\hyperlink{class_client}{Client}}* \mbox{\hyperlink{class_client_a3ea19f5ded73f8cde72e96b3d95d71fa}{GetInstance}}();}
+\DoxyCodeLine{81 }
+\DoxyCodeLine{86         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_client_a7cda504f13c327c6efa76b20507d4765}{SendToServer}}(QString message);}
+\DoxyCodeLine{87 }
+\DoxyCodeLine{88 signals:}
+\DoxyCodeLine{89     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_client_ad8053a46ff1c6d069670152fc7864533}{log\_in\_as\_student}}();}
+\DoxyCodeLine{90     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_client_aa1ce4eaa511031b053966e7644c6b302}{log\_in\_as\_teacher}}();}
+\DoxyCodeLine{91     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_client_a9cf76d4d1661355a5f5ad59f6c16bbd8}{wrong\_credentials}}();}
+\DoxyCodeLine{92     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_client_a45c849cb9f29493bae7213e39f7de5ad}{registered}}();}
+\DoxyCodeLine{93     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_client_a4c7d3b6ba1cacd3d5b7a75de91f51829}{user\_exists}}();}
+\DoxyCodeLine{94     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_client_a0525afcc549fb1f280db2aa7131127de}{solved\_1}}();}
+\DoxyCodeLine{95     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_client_ad48de43477f63b4e65253204bc3b4350}{solved\_2}}();}
+\DoxyCodeLine{96     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_client_ae775bbca72f9e8815fc350e704f266c1}{solved\_3}}();}
+\DoxyCodeLine{97     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_client_a140fc89af3bba16df1e5aabb5a491236}{solved\_4}}();}
+\DoxyCodeLine{98     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_client_aa721cb48849a6ed8ce11ab3c3cc80458}{not\_solved\_1}}();}
+\DoxyCodeLine{99     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_client_ade10034ae305f83c1c43e9db4ca3c3bc}{not\_solved\_2}}();}
+\DoxyCodeLine{100     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_client_a3f1bd74e33111fb7a3a2102d5878ad58}{not\_solved\_3}}();}
+\DoxyCodeLine{101     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_client_a47a31e359f6198d4e855e5b299b1341c}{not\_solved\_4}}();}
+\DoxyCodeLine{102     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_client_a770490e860894553412e0851b975817f}{not\_yet\_1}}();}
+\DoxyCodeLine{103     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_client_aaa9fdd3b312081e1474defbc697ff37a}{not\_yet\_2}}();}
+\DoxyCodeLine{104     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_client_ac66e66b06bdb51c8f16539add6eb930b}{not\_yet\_3}}();}
+\DoxyCodeLine{105     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_client_a58ec1e6227c445b43ef8f876e9787e37}{not\_yet\_4}}();}
+\DoxyCodeLine{106     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_client_a391e797909054224a7915894f3d93deb}{allowed}}();}
+\DoxyCodeLine{107     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_client_ae5ed88d15bcc288ce0d9a3c83223199f}{not\_allow}}();}
+\DoxyCodeLine{108     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_client_a6917fdb69c856494eae343af9652f2f2}{get\_it}}(QString g);}
+\DoxyCodeLine{109     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_client_a6ef9d448b0e6f58ac0912e56a515baac}{group}}(QString \mbox{\hyperlink{class_client_a6ef9d448b0e6f58ac0912e56a515baac}{group}});}
+\DoxyCodeLine{110     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_client_a24025944d805d00e4b4e3dea93aa2a69}{teacher}} (QString \mbox{\hyperlink{class_client_a24025944d805d00e4b4e3dea93aa2a69}{teacher}});}
+\DoxyCodeLine{111     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_client_a6791e0e8cd5652dbad711ff5410b8d28}{student}} (QString \mbox{\hyperlink{class_client_a6791e0e8cd5652dbad711ff5410b8d28}{student}});}
+\DoxyCodeLine{112     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_client_afc4a2cb51d0bb707026c66a71953d3fe}{you\_cannot}}();}
+\DoxyCodeLine{113     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_client_a86ad7b7129e5d11ee7f7be22731b1373}{student\_in\_group}}();}
+\DoxyCodeLine{114 }
+\DoxyCodeLine{115 \textcolor{keyword}{public} slots:}
+\DoxyCodeLine{119     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_client_a81ed0f9fd956c76f3a7b2870b55cefd8}{slotServerRead}}();}
+\DoxyCodeLine{120 \};}
+\DoxyCodeLine{121 }
+\DoxyCodeLine{122 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// CLIENT\_H}}
+
+\end{DoxyCode}
